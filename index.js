@@ -72,7 +72,7 @@ function drawHelp(i, j, cxt) {
 	cxt.fillStyle = "red";
 	
 	cxt.beginPath();
-	cxt.arc(30+50*j, 30+50*i, 40, 0, 2*Math.PI);
+	cxt.arc(50+50*j, 50+50*i, 20, 0, 2*Math.PI);
 	cxt.closePath();
 	
 	cxt.fill();

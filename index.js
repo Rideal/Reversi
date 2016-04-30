@@ -332,7 +332,8 @@ function updateChessBoard ( cxt) {
 		}
 	}
 	var score = calcScore( boardData);
-	document.getElementById("score").textContent = "玩家："+ score.me + " ，计算机："+ score.computer;
+	document.getElementById("player").textContent = score.me ;
+	document.getElementById("computer").textContent = score.computer;
 }
 
 function calcScore ( boardData) {

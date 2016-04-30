@@ -1,7 +1,11 @@
+*{
+	margin: 0;
+}
 #top {
-	margin: 8px auto;
+	margin: 6px auto;
 	width: 450px;
 	text-align: center;
+	overflow: hidden;
 }
 #info {
 	margin: 0 auto;
@@ -24,9 +28,7 @@ button {
 	float: right;
 	width: 60px;
 }
-h1 {
-	display: inline;
-}
+
 
 canvas {
 	display: block;
@@ -46,5 +48,14 @@ canvas {
 }
 #score {
 	text-align: center;
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 40px;
+}
+#player {
+	color: red;
+	font-size: 25px;
+}
+#computer {
+	color: blue;
+	font-size: 25px;
 }

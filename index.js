@@ -21,6 +21,7 @@ window.onload = function () {
 		initBoard();
 		updateChessBoard( cxt);
 		updateCanDown( true, canDown);
+		updateChessBoard( cxt);
 	});
 
 	var help = document.getElementById("help");
@@ -28,7 +29,10 @@ window.onload = function () {
 		var point = computerPoint( true);
 		drawHelp(point.i, point.j, cxt);
 		var info = document.getElementById("info");
-		setTimeout(function(){updateChessBoard( cxt);},500);
+		setTimeout(function(){
+			updateChessBoard( cxt);
+			updateChessBoard( cxt);
+		},500);
 	});
 
 	var isClicked = false;
